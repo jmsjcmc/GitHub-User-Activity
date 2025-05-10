@@ -25,6 +25,7 @@ This will fetch and display the latest public GitHub activity for the user `jmsj
 ---
 ## 🌐 GitHub API 
 This script uses the **[GitHub REST API v3](https://docs.github.com/en/rest)** to retrieve public events for a user.
+
 **Endpoint:**
 ```bash
 GET https://api.github.com/users/:username/events
