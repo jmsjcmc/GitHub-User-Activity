@@ -1,4 +1,5 @@
 
+
 # GitHub Activity Fetcher
 
 A simple Node.js script to fetch and display recent public GitHub activity for a given username using the GitHub REST API.
@@ -32,24 +33,25 @@ GET https://api.github.com/users/:username/events
 ```
 **Headers Required:**
 
- 1. `User-Agent`: A custom user agent is required by GitHub's API.
- 2. `Accept`: Specifies the response media type (we use `application/vnd.github.v3+json` for v3).
+ 
+ - `User-Agent`: A custom user agent is required by GitHub's API.
+ - `Accept`: Specifies the response media type (we use `application/vnd.github.v3+json` for v3).
  
  **Notes:**
  
- 3. Only public events are returned.
- 4. The default limit is 30 events.
- 5. This endpoint does not require authentication, but you may hit the **rate limit** quickly (60 requests per hour per IP for unauthenticated requests).
+ - Only public events are returned.
+ - The default limit is 30 events.
+ - This endpoint does not require authentication, but you may hit the **rate limit** quickly (60 requests per hour per IP for unauthenticated requests).
  ---
 ## 🛠️ Features
- 6. Fetches recent GitHub activity
- 7. Supports:
+ - Fetches recent GitHub activity
+ - Supports:
 	 - Push events
 	 - Issue activity
 	 - Comments
 	 - Stars
 	 - Forks
- 8. Handles:
+ - Handles:
 	 - Missing usernames
 	 - Invalid users
 	 - Rate limits
@@ -57,8 +59,8 @@ GET https://api.github.com/users/:username/events
 ---
 ## ⚠️ Rate Limiting
 GitHub's unauthenticated API limit is **60 requests per hour** per IP. To increase the limit:
- 1. Generate a [Personal Access Token](https://github.com/settings/tokens).
- 2. Modify the script to include an `Authorization` header:
+ - Generate a [Personal Access Token](https://github.com/settings/tokens).
+ - Modify the script to include an `Authorization` header:
 ```json
 'Authorization': 'token YOUR_PERSONAL_ACCESS_TOKEN'
 
