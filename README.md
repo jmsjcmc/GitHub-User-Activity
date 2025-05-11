@@ -8,7 +8,7 @@ A simple Node.js script to fetch and display recent public GitHub activity for a
 
 - [Node.js](https://nodejs.org/) installed (v12+ recommended)
 
-## 📥 Installation
+## 📥 Setup
 
 Clone the repository or copy the `activity.js` file into your project directory.
 
