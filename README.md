@@ -4,7 +4,7 @@
 
 A simple Node.js script to fetch and display recent public GitHub activity for a given username using the GitHub REST API.
 
-## 🔧 Prerequisites
+## 📦 Prerequisites
 
 - [Node.js](https://nodejs.org/) installed (v12+ recommended)
 
